@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.TrassTarea" parent="Theme.Material3.Dark">
+        <!-- Cambia el color de la barra de aplicaciones y elementos resaltados -->
+        <item name="colorPrimary">@color/mi_color_primary</item>
+        <!-- Cambia el color de la barra de estado -->
+        <item name="colorPrimaryDark">@color/mi_color_primary_dark</item>
+        <!-- Cambia el color de los elementos interactivos -->
+        <item name="colorAccent">@color/mi_color_accent</item>
+        <!-- Cambia el color de fondo de controles normales -->
+        <item name="colorControlNormal">@color/mi_color_control_normal</item>
+        <!-- Cambia el color de fondo de controles activados -->
+        <item name="colorControlActivated">@color/mi_color_control_activated</item>
+        <!-- Cambia el color de resaltado de interacción -->
+        <item name="colorControlHighlight">@color/mi_color_control_highlight</item>
+        <!-- Personalización de fuentes -->
+        <item name="android:textColorPrimary">@color/mi_color_primary_dark</item>
+        <item name="android:textColorSecondary">@color/mi_color_primary</item>
+    </style>
+</resources>

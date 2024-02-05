@@ -1,0 +1,156 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/cat_visualizacion" >
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:title="@string/pref_tema"
+            app:dependency="contraste"
+            app:icon="@drawable/baseline_light_mode_24"
+            app:key="tema"
+            app:summaryOff="@string/pref_tema_claro"
+            app:summaryOn="@string/pref_tema_oscuro" />
+        <CheckBoxPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:title="@string/pref_alto_contraste"
+            app:disableDependentsState="true"
+            app:icon="@drawable/baseline_contrast_24"
+            app:key="contraste" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="@string/pref_letra"
+            app:defaultValue="M"
+            app:entries="@array/fuente_entradas"
+            app:entryValues="@array/fuente_valores"
+            app:icon="@drawable/baseline_format_size_24"
+            app:key="fuente"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/cat_ordenacion">
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="a"
+            android:title="@string/pref_criterio"
+            app:entries="@array/criterio_entradas"
+            app:entryValues="@array/criterio_valores"
+            app:icon="@drawable/baseline_sort_24"
+            app:key="criterio"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="@string/pref_orden"
+            app:icon="@drawable/baseline_sort_by_alpha_24"
+            app:key="orden"
+            app:summaryOff="@string/summary_off_orden"
+            app:summaryOn="@string/summary_on_orden"
+            app:switchTextOff="desc"
+            app:switchTextOn="asc" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/cat_almacenamiento">
+
+        <CheckBoxPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:title="@string/pref_sd"
+            app:icon="@drawable/baseline_sd_card_24"
+            app:key="sd" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_limpieza"
+            app:defaultValue='0'
+            app:icon="@drawable/baseline_cleaning_services_24"
+            app:key="limpieza"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:title="@string/pref_bd"
+            app:icon="@drawable/baseline_save_alt_24"
+            app:key="bd"
+            app:summaryOff="SQLite"
+            app:summaryOn="MySQL, MariaDB"
+            app:switchTextOff="int"
+            app:switchTextOn="ext" />
+        <PreferenceCategory
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="@string/cat_bd_externa"
+            app:dependency="bd">
+            <!--TODO conseguir la dependencia -->
+            <EditTextPreference
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:defaultValue="trasstarea_db"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_nombrebd"
+                app:icon="@drawable/baseline_drive_file_rename_outline_24"
+                app:key="nombrebd"
+                app:useSimpleSummaryProvider="true" />
+            <EditTextPreference
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:defaultValue="10.0.2.2"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_ip"
+                app:icon="@drawable/baseline_location_on_24"
+                app:key="ip"
+                app:useSimpleSummaryProvider="true" />
+            <EditTextPreference
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_puerto"
+                app:defaultValue="3306"
+                app:icon="@drawable/baseline_numbers_24"
+                app:key="puerto"
+                app:useSimpleSummaryProvider="true" />
+            <EditTextPreference
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:defaultValue="usuario"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_usuario"
+                app:icon="@drawable/baseline_person_24"
+                app:key="usuario"
+                app:useSimpleSummaryProvider="true" />
+            <EditTextPreference
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:defaultValue="usuario"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_password"
+                app:icon="@drawable/baseline_verified_user_24"
+                app:key="password"
+                app:useSimpleSummaryProvider="false" />
+        </PreferenceCategory>
+    </PreferenceCategory>
+
+    <Preference
+        android:id="@+id/pref_restablecer"
+        android:key="restablecer"
+        app:layout="@layout/boton_restablecer" />
+
+</PreferenceScreen>

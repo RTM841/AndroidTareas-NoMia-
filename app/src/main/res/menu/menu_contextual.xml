@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_detalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_description_black_24dp"
+        android:title="@string/item_detalle" />
+    <item
+        android:id="@+id/item_editar"
+        android:icon="@drawable/baseline_mode_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/item_editar" />
+    <item
+        android:id="@+id/item_borrar"
+        android:icon="@drawable/baseline_delete_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/item_borrar" />
+</menu>

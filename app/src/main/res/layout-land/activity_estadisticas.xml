@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_crear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado_background"
+    tools:context=".actividades.EstadisticasActivity">
+
+    <TextView
+        android:id="@+id/tv_estadisticas_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/tv_estadisticas_tarea"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_estadisticas_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/bt_estadisticas_cerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/bt_estadisticas_volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_estadisticas_val1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/tv_estadisticas_val1"
+        android:textColor="@color/mi_color_accent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_estadisticas_cat1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/guideline_estadisticas_vertical" />
+
+    <TextView
+        android:id="@+id/tv_estadisticas_val2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/tv_estadisticas_val2"
+        android:textColor="@color/mi_color_accent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_estadisticas_cat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/guideline_estadisticas_vertical" />
+
+    <TextView
+        android:id="@+id/tv_estadisticas_val3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/tv_estadisticas_val3"
+        android:textColor="@color/mi_color_accent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_estadisticas_cat3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_estadisticas_vertical" />
+
+    <TextView
+        android:id="@+id/tv_estadisticas_val4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/tv_estadisticas_val4"
+        android:textColor="@color/mi_color_accent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_estadisticas_cat4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/guideline_estadisticas_vertical" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="tv_estadisticas_cat1,tv_estadisticas_cat2,tv_estadisticas_cat3,tv_estadisticas_cat4"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toTopOf="@+id/bt_estadisticas_cerrar"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_estadisticas_vertical"
+        app:layout_constraintStart_toEndOf="@+id/tv_estadisticas_titulo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_estadisticas_cat1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingStart="16dp"
+        android:singleLine="false"
+        android:text="@string/tv_estadisticas_cat1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_estadisticas_vertical"
+        app:layout_constraintStart_toEndOf="@+id/tv_estadisticas_titulo" />
+
+    <TextView
+        android:id="@+id/tv_estadisticas_cat2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingStart="16dp"
+        android:singleLine="false"
+        android:text="@string/tv_estadisticas_cat2"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_estadisticas_vertical"
+        app:layout_constraintStart_toEndOf="@+id/tv_estadisticas_titulo"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <TextView
+        android:id="@+id/tv_estadisticas_cat3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingStart="16dp"
+        android:singleLine="false"
+        android:text="@string/tv_estadisticas_cat3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_estadisticas_vertical"
+        app:layout_constraintStart_toEndOf="@+id/tv_estadisticas_titulo"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <TextView
+        android:id="@+id/tv_estadisticas_cat4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingStart="48dp"
+        android:singleLine="false"
+        android:text="@string/tv_estadisticas_cat4"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_estadisticas_vertical"
+        app:layout_constraintStart_toEndOf="@+id/tv_estadisticas_titulo"
+        tools:layout_editor_absoluteY="531dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

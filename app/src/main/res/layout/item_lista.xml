@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_elemento_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/elemento_tv_titulo"
+                android:textColor="@color/mi_color_primary"
+                android:textScaleX="1.05"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:drawableLeftCompat="@drawable/baseline_stars_24_black" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_elemento_segunda_fila"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/pg_elemento"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:progressTint="@color/mi_color_control_activated" />
+
+                <TextView
+                    android:id="@+id/tv_elemento_fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/elemento_tv_fecha"
+                    android:textAlignment="center"
+                    android:textColor="@color/mi_color_primary_dark" />
+
+                <TextView
+                    android:id="@+id/tv_elemento_quedan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/elemento_tv_quedan"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/mi_color_primary_dark" />
+
+                <TextView
+                    android:id="@+id/tv_elemento_ndias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/elemento_tv_ndias"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_elemento_dias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/elemento_tv_dias"
+                    android:textColor="@color/mi_color_primary_dark" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

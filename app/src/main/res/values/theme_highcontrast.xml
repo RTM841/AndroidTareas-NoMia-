@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme.-->
+    <style name="Theme.TrassTarea.HighContrast" parent="Theme.Material3.Light">
+        <item name="colorPrimary">#00FFFF</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#FF0000</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FF0000</item>
+        <item name="colorControlHighlight">#FFFF00</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
+    </style>
+</resources>

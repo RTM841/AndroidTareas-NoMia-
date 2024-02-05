@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="mi_color_primary">#3F51B5</color>
+        <color name="mi_color_primary_dark">#300F6F</color>
+        <color name="mi_color_secondary">#7385EA</color>
+        <color name="mi_color_accent">#FF4081</color>
+        <color name="mi_color_control_normal">#999999</color>
+        <color name="mi_color_control_activated">#FF5722</color>
+        <color name="mi_color_control_highlight">#FFC107</color>
+</resources>

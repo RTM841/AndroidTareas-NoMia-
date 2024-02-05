@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="progreso_texto">
+        <item>No iniciada</item>
+        <item>Iniciada</item>
+        <item>Avanzada</item>
+        <item>Casi finalizada</item>
+        <item>Finalizada</item>
+    </array>
+
+    <string-array name="fuente_entradas">
+        <item>Pequeño</item>
+        <item>Mediano</item>
+        <item>Grande</item>
+    </string-array>
+
+    <string-array name="fuente_valores">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+    </string-array>
+
+    <string-array name="criterio_entradas">
+        <item>Alfabético</item>
+        <item>Fecha de creación</item>
+        <item>Días restantes</item>
+        <item>Progreso</item>
+    </string-array>
+
+    <string-array name="criterio_valores">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+
+</resources>
